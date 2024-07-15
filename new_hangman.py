@@ -14,7 +14,7 @@ def run():
 
     while True:
         os.system("cls")
-        print(word)
+        #print(word)
         print(underlines)
         letter = input(f"Hangman! Guess the word, you have {attemps} attemps ==>").lower()
 
