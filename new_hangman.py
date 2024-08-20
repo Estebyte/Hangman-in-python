@@ -8,13 +8,13 @@ def select_word(path):
     return word
 
 def run():
-    word = (select_word("Python/Pruebas/data.txt"))
+    word = (select_word("data.txt"))
     attemps = len(word) + (len(word) // 2)
     underlines = list("_" * len(word))  
 
     while True:
-        os.system("cls")
-        #print(word)
+        os.system("clear")
+        print(word)
         print(underlines)
         letter = input(f"Hangman! Guess the word, you have {attemps} attemps ==>").lower()
 
@@ -22,7 +22,7 @@ def run():
             if letter.isalpha() == False or len(letter) != 1:
                 raise Exception("Oops, you can only enter one letter")
         except Exception as error:
-            os.system("cls")
+            os.system("clear")
             print(error)
             continue
             
@@ -31,21 +31,21 @@ def run():
             for index, values in enumerate(word): #Change "_" in underlines by letter
                 if values == letter:
                     underlines[index] = letter
-            os.system("cls")
+            os.system("clear")
         else:
             attemps -=1
-            os.system("cls")
+            os.system("clear")
 
         #Win event
         if not "_" in underlines:
-            os.system("cls")
+            os.system("clear")
             print(underlines)
             print("Great! You won")
             break
 
         #Lose event
         if attemps == 0:
-            os.system("cls")
+            os.system("clear")
             print(f"Sorry, you lost. The word was: {word}")
             break
 
