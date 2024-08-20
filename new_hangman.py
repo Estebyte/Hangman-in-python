@@ -20,10 +20,10 @@ def run():
 
         try:
             if letter.isalpha() == False or len(letter) != 1:
-                raise Exception("Oops, you can only enter one letter")
+                raise Exception("Oops, you can only enter one letter...")
         except Exception as error:
             os.system("clear")
-            print(error)
+            input(f"{error} Press Enter to continue: ")
             continue
             
         #Search letter in word    
