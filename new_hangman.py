@@ -40,13 +40,13 @@ def run():
         if not "_" in underlines:
             os.system("clear")
             print(underlines)
-            print("Great! You won")
+            print("Great! You won <3")
             break
 
         #Lose event
         if attemps == 0:
             os.system("clear")
-            print(f"Sorry, you lost. The word was: {word}")
+            print(f"Sorry, you lost... The word was: {word}")
             break
 
 if __name__ == "__main__":
