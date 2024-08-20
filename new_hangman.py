@@ -2,8 +2,8 @@ import random
 import os
 
 def select_word(path):
-    with open(path, "r", encoding="utf-8") as file:
-        data = [i[:-1]for i in file]
+    with open(path, "r") as file:
+        data = [i.strip() for i in file]
     word = random.choice(data)
     return word
 
