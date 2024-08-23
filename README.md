@@ -4,7 +4,7 @@ It's a simple hangman game in the terminal, where the player tries to find a wor
 
 ## Instalation 
 
-To start playing, you need to clone the repository and have [Python](https://www.python.org/) installed on your sistem
+To start playing, you need to clone the repository and have [Python](https://www.python.org/) installed on your system
 
 1. Clone the repository
 
